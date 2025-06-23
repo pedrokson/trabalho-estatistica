@@ -1,31 +1,33 @@
 # Relatório de Análise Estatística
 
-**Tema**: *\[Insira o título do seu trabalho aqui]*  
-**Autores**: *\[Nome do(s) autor(es)]*  
-**Data**: *\[DD/MM/AAAA]*
+**Tema**: *\[Comparação Estatística da Taxa de Alfabetização entre as Regiões Sul e Sudeste do Brasil]*  
+**Autores**: *\[Pedro Henrique Sutil]*  
+**Data**: *\[27/06/2025]*
+/
+/# 1\. Introdução
 
-## 1\. Introdução
-
-Este relatório apresenta uma análise estatística do conjunto de dados [Nome do Conjunto de Dados]. O objetivo principal é [brevemente, qual o objetivo geral da análise, ex: explorar as relações entre variáveis, testar hipóteses específicas, etc.].
-
+Este relatório apresenta uma análise estatística da taxa de alfabetização nas regiões Sul e Sudeste do Brasil, com base em dados municipais. O objetivo principal é explorar as características da distribuição da taxa de alfabetização em cada região, comparar as médias, dispersões e identificar diferenças entre os estados que compõem essas regiões.
 -----
 
 ## 2\. Descrição do Conjunto de Dados
 
-* Fonte dos dados: [Link para o dataset](https://exemplo.com/dataset)
-* Número de observações (linhas): `XXX`
-* Número de variáveis (colunas): `YYY`
+* Fonte dos dados: [A base original veio deste link do IBGE:](https://sidra.ibge.gov.br/pesquisa/censo-demografico/demografico-2022/inicial)
+* Fonte dos dados: [E a base tratada veio do link da base dos dados:](https://basedosdados.org/dataset/08a1546e-251f-4546-9fe0-b1e6ab2b203d?table=cf9537b5-6198-455f-a8b0-7c762e94d79c)
+* Número de observações (linhas): `5571`
+* Número de variáveis (colunas): `13`
 
 ### 2.1. O que representam os dados?
 
-Este conjunto de dados contém informações sobre [descreva o que cada linha representa, ex: clientes, experimentos, observações, etc.] e foi obtido a partir de [descreva a fonte dos dados, ex: um repositório público, coleta própria, etc.].
+Este conjunto de dados contém informações sobre municípios brasileiros e suas taxas de alfabetização. Cada linha representa um município. Os dados foram obtidos a partir do arquivo ibgecd.csv, que provavelmente foi extraído de bases públicas do IBGE ou órgãos oficiais relacionados a estatísticas educacionais.
 
-| Coluna | Descrição | Tipo de Dado | Exemplo |
+| Coluna               | Descrição                                                   | Tipo de Dado           | Exemplo            |
 |---|---|---|---|
-| `[Nome da Coluna 1]` | [Explicação detalhada da coluna 1] | [Ex: Numérico, Categórico, Data] | [Ex: 12.5, "Masculino", "2023-01-15"] |
-| `[Nome da Coluna 2]` | [Explicação detalhada da coluna 2] | [Ex: Numérico, Categórico, Data] | [Ex: 100, "Solteiro", "2024-03-20"] |
-| `[Nome da Coluna 3]` | [Explicação detalhada da coluna 3] | [Ex: Numérico, Categórico, Data] | [Ex: 75000, "Região Norte", "2025-06-01"] |
-| ... | ... | ... | ... |
+| `sigla_uf`           | Sigla do estado onde o município está localizado            | Categórico             | "SP", "PR", "RS"   |
+| `id_municipio`       | Identificador numérico único do município                    | Numérico (inteiro)     | 4106902, 4314902    |
+| `taxa_alfabetizacao` | Percentual da população alfabetizada no município           | Numérico (porcentagem) | 95.4, 88.7         |
+| `regiao`             | Região geográfica do município (criada na análise, Sul/Sudeste) | Categórico           | "Sul", "Sudeste"   |
+|---|---|---|---|
+
 
 ### 2.2. Como os dados foram obtidos?
 
