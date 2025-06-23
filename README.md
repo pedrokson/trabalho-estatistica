@@ -181,15 +181,16 @@ ggplot(dados_sudeste, aes(x = taxa_alfabetizacao, fill = sigla_uf)) +
 
 ## 5\. Figuras Geradas e Explicações
 
-Insira aqui gráficos com breve explicação. Para adicionar imagens no Markdown do GitHub:
+### 5.1. Boxplot da Taxa de Alfabetização – Sul vs Sudeste
 
-```markdown
-![Boxplot da Taxa de Alfabetização – Sul vs Sudeste](https://github.com/pedrokson/trabalho-estatistica/blob/main/Rplot.png)
-```
+ ![Boxplot da Taxa de Alfabetização – Sul vs Sudeste](https://github.com/pedrokson/trabalho-estatistica/blob/main/Rplot.png)
 
-### 5.1. Histograma da Variável [Nome da Variável]
+**Explicação:**  
+O boxplot acima foi escolhido porque é uma ferramenta gráfica eficaz para representar a distribuição de uma variável contínua (neste caso, a taxa de alfabetização) em diferentes grupos (regiões Sul e Sudeste). O boxplot permite visualizar de forma clara a mediana, os quartis, a amplitude interquartil (IQR) e possíveis outliers das duas regiões.
 
-  * **Explicação:** Este histograma mostra a distribuição da variável `Idade`. Observa-se que [descreva as principais características da distribuição, ex: a maioria dos indivíduos está na faixa de 30-40 anos, a distribuição é levemente assimétrica à direita, etc.]. Isso é importante para entender [justifique a relevância da visualização, ex: a composição etária da nossa amostra, a presença de outliers, etc.].
+No gráfico, observa-se que a mediana da taxa de alfabetização é ligeiramente maior na região Sudeste em comparação à região Sul. A região Sudeste apresenta menor dispersão (amplitude interquartil menor), indicando que os valores de taxa de alfabetização entre os municípios dessa região são mais homogêneos. Por outro lado, o Sul apresenta maior variabilidade, evidenciada por uma caixa mais larga e presença de outliers — indicando municípios com taxas muito diferentes da maioria.
+
+A escolha deste gráfico se justifica pela sua capacidade de comparar rapidamente a tendência central e a dispersão das duas regiões, além de identificar valores discrepantes que poderiam influenciar as análises estatísticas, como média e desvio padrão.
 
 ### 5.2. Gráfico de Dispersão entre [Variável X] e [Variável Y]
 
