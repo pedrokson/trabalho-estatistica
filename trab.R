@@ -121,3 +121,13 @@ teste_t <- t.test(Sul$taxa_alfabetizacao, Sudeste$taxa_alfabetizacao,
 
 print("Resultado do Teste t de Student entre Sul e Sudeste:")
 print(teste_t)
+
+# Filtrar apenas as regiões Sul e Sudeste
+dados_anova <- dados[dados$regiao %in% c("Sul", "Sudeste"), ]
+
+# Teste ANOVA: comparar a taxa de alfabetização entre os estados (sigla_uf)
+modelo_aov <- aov(taxa_alfabetizacao ~ sigla_uf, data = dados_anova)
+
+# Resumo dos resultados da ANOVA
+summary(modelo_aov)
+
