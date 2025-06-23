@@ -188,9 +188,9 @@ ggplot(dados_sudeste, aes(x = taxa_alfabetizacao, fill = sigla_uf)) +
 **Explicação:**  
 O boxplot acima foi escolhido porque é uma ferramenta gráfica eficaz para representar a distribuição de uma variável contínua (neste caso, a taxa de alfabetização) em diferentes grupos (regiões Sul e Sudeste). O boxplot permite visualizar de forma clara a mediana, os quartis, a amplitude interquartil (IQR) e possíveis outliers das duas regiões.
 
-No gráfico, observa-se que a mediana da taxa de alfabetização é ligeiramente maior na região Sudeste em comparação à região Sul. A região Sudeste apresenta menor dispersão (amplitude interquartil menor), indicando que os valores de taxa de alfabetização entre os municípios dessa região são mais homogêneos. Por outro lado, o Sul apresenta maior variabilidade, evidenciada por uma caixa mais larga e presença de outliers — indicando municípios com taxas muito diferentes da maioria.
+No gráfico, observamos que a mediana da taxa de alfabetização é ligeiramente maior na região Sul em comparação à região Sudeste, diferente do que poderíamos esperar. A região Sul também apresenta uma menor dispersão (caixa menor), indicando que os municípios dessa região possuem taxas de alfabetização mais parecidas entre si. Já a região Sudeste apresenta maior variabilidade, com uma caixa mais larga e vários outliers abaixo da média, ou seja, existem municípios no Sudeste com taxas de alfabetização significativamente menores que os demais.
 
-A escolha deste gráfico se justifica pela sua capacidade de comparar rapidamente a tendência central e a dispersão das duas regiões, além de identificar valores discrepantes que poderiam influenciar as análises estatísticas, como média e desvio padrão.
+O uso do boxplot foi importante porque ele permite visualizar de forma clara a diferença entre as regiões, mostrando a média aproximada, a variação dos dados e também os municípios que estão fora do padrão esperado (outliers). Isso ajuda a entender melhor o comportamento dos dados e evita interpretações erradas em outras medidas, como a média e o desvio padrão.
 
 ### 5.2. Gráfico de Dispersão entre [Variável X] e [Variável Y]
 
