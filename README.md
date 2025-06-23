@@ -5,7 +5,7 @@
 **Data**: *\[27/06/2025]*
 /
 
-/# 1\. Introdução
+## 1\. Introdução
 
 Este relatório apresenta uma análise estatística da taxa de alfabetização nas regiões Sul e Sudeste do Brasil, com base em dados municipais. O objetivo principal é explorar as características da distribuição da taxa de alfabetização em cada região, comparar as médias, dispersões e identificar diferenças entre os estados que compõem essas regiões.
 -----
