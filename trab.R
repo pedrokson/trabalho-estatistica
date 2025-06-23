@@ -112,3 +112,12 @@ ggplot(dados_sudeste, aes(x = taxa_alfabetizacao, fill = sigla_uf)) +
   labs(title = "Histograma da Taxa de Alfabetização - Região Sudeste (por Estado)",
        x = "Taxa de Alfabetização", y = "Frequência") +
   theme_minimal()
+# ---------- TESTE T DE STUDENT ----------
+# Verificar se há diferença significativa entre as médias da taxa de alfabetização das regiões Sul e Sudeste
+
+teste_t <- t.test(Sul$taxa_alfabetizacao, Sudeste$taxa_alfabetizacao,
+                  alternative = "two.sided", # Teste bicaudal (médias diferentes)
+                  var.equal = FALSE)         # Variância não assumida como igual (Welch)
+
+print("Resultado do Teste t de Student entre Sul e Sudeste:")
+print(teste_t)
