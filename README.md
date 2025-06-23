@@ -34,7 +34,7 @@ Este conjunto de dados contém informações sobre municípios brasileiros e sua
 
 ### 2.2. Como os dados foram obtidos?
 
-Os dados foram coletados por meio de [descreva o método de coleta, ex: pesquisas, sensores, extração de banco de dados, etc.]. Quaisquer passos de pré-processamento, como limpeza ou transformação, foram [descreva brevemente, ex: realizados para lidar com valores ausentes, normalização, etc.].
+Os dados foram extraídos de um arquivo em formato Excel (ibgecd.xlsx) contendo informações sobre os municípios brasileiros e suas respectivas taxas de alfabetização, com base em fontes oficiais, como o Instituto Brasileiro de Geografia e Estatística (IBGE). Para a análise, o arquivo foi importado para o software R, onde foram realizadas etapas de pré-processamento, como a criação de uma nova variável categórica denominada "região", que classificou cada município nas regiões Sul ou Sudeste de acordo com a sua sigla de Unidade Federativa (UF). Além disso, foram tratados eventuais valores ausentes na variável "taxa_alfabetizacao", garantindo a correta execução dos cálculos estatísticos.
 
 -----
 
@@ -42,9 +42,9 @@ Os dados foram coletados por meio de [descreva o método de coleta, ex: pesquisa
 
 Nesta análise, buscamos responder às seguintes questões/problemas:
 
-  * **Questão 1:** [Formule a primeira questão de pesquisa, ex: Existe uma relação significativa entre [Variável A] e [Variável B]?]
-  * **Questão 2:** [Formule a segunda questão de pesquisa, ex: Qual o impacto de [Variável C] em [Variável D]?]
-  * **Questão 3:** [Formule a terceira questão de pesquisa, ex: Existem grupos distintos nos dados com base em [Variáveis X, Y, Z]?]
+  * **Questão 1:** [Qual a média da taxa de alfabetização nas regiões Sul e Sudeste?]
+  * **Questão 2:** [Como se comporta a dispersão dos dados dentro e entre os estados que compõem cada região?]
+  * **Questão 3:** [As diferenças entre Sul e Sudeste são visíveis nos gráficos de boxplot e histogramas?]
   * ...
 
 -----
