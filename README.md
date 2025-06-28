@@ -1,7 +1,7 @@
 # Relatório de Análise Estatística
 
 **Tema**: *\[Comparação Estatística da Taxa de Alfabetização entre as Regiões Sul e Sudeste do Brasil]*  
-**Autores**: *\[Pedro Henrique Sutil]*  
+**Autores**: *\[Pedro Henrique Sutil e João Marcelino Neto]*  
 **Data**: *\[27/06/2025]*
 /
 
